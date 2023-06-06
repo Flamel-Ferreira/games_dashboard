@@ -1,0 +1,9 @@
+export const ColorsTheme = {
+    colors:{
+        white: '#FFFFFF',
+        white20: 'rgb(217,217,217,0.15)',
+        red:'#F55859',
+        blue: '#0F81EC',
+    },
+
+}
