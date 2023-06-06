@@ -1,4 +1,5 @@
 import './App.css'
+import { StyledButton } from './styles/buttons'
 import { StyledBaseTitle, StyledParagraph } from './styles/typography'
 
 function App() {
@@ -9,9 +10,23 @@ function App() {
             fontWeight={400} 
             sizeCategory='lg' 
             className='titulo'
-        >Games Dashboard</StyledBaseTitle>
+        >
+            Games Dashboard
+        </StyledBaseTitle>
 
-        <StyledParagraph sizeCategory='lg' >Parágrafo</StyledParagraph>
+        <StyledParagraph 
+            sizeCategory='lg' 
+        >
+            Parágrafo
+        </StyledParagraph>
+
+        <StyledButton 
+            buttonSize='sm'
+            buttonStyle='outline'
+            className='infoButton'
+        >
+            Ver Mais
+        </StyledButton>
     </div>
   )
 }
