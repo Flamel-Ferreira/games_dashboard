@@ -5,5 +5,4 @@ export const ColorsTheme = {
         red:'#F55859',
         blue: '#0F81EC',
     },
-
 }
