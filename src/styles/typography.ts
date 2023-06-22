@@ -61,3 +61,34 @@ export const StyledParagraph = styled.p<iStyledParagraph>`
 
 
 `
+
+interface iStyledTagProps {
+    backgroundColor: 'blue' | 'red';
+}
+
+export const StyledTag = styled.span<iStyledTagProps>`
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    height: 34px;
+    align-items:center;
+    justify-content: center;
+    padding: 0 1.5rem;      
+    border-radius: 6px;
+    color: white;
+
+    ${({backgroundColor, theme}) => {
+        switch (backgroundColor) {
+            case 'blue':
+                return css`
+                    background-color: ${theme.colors.blue};
+                `
+            case 'red':
+                return css`
+                    background-color: ${theme.colors.red};
+                `
+            }
+        }
+    }
+`
