@@ -22,7 +22,7 @@ export const StyledBaseTitle = styled(BaseTitle)<iStyledBaseTitleProps>`
     }};
 `
 
-//outra sintaxe de lógica de variantes com switch case, melhor para quando ouver mais de uma propriedade para estilizar com base em uma única props
+// Outra sintaxe de lógica de variantes com switch case, melhor para quando ouver mais de uma propriedade para estilizar com base em uma única props
 interface iStyledParagraph{
     opacity?: number;
     sizeCategory: 'lg'|'md'|'sm';

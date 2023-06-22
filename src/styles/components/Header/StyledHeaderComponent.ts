@@ -24,7 +24,7 @@ export const StyledHeader = styled.header`
 
          .userMenu{
             width:100%;
-            justify-content:flex-end;
+            justify-content:center;
          }
     }
 `
@@ -56,5 +56,9 @@ export const StyledHeaderForm = styled.form`
         &:focus{
             outline: none;
         }
+    }
+
+    @media (max-width: 600px){
+        height:52px;
     }
 `

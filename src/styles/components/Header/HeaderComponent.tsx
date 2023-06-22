@@ -15,7 +15,7 @@ const HeaderComponent = () => {
             <button>
                 <MdNotifications size={30} color='#FFF' />
             </button>
-                <img src={Avatar1} alt="Nome do Usuário" />
+            <img src={Avatar1} alt="Nome do Usuário" />
         </div>
     </StyledHeader>
   )
