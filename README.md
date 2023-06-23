@@ -1,3 +1,3 @@
 ## Games Dashboard
-# Uma aplicação para testar habilidades em react.
+# Uma aplicação para testar minhas habilidades em react.
 
