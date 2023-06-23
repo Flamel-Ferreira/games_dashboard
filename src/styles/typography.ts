@@ -11,7 +11,33 @@ export const StyledBaseTitle = styled(BaseTitle)<iStyledBaseTitleProps>`
     color: ${({theme}) => theme.colors.white};
     font-family: 'Popping', sans-serif;
     font-weight: ${({fontWeight})=> fontWeight};
-    font-size: ${({fontSize})=> {
+    ${({fontSize}) => {
+        switch (fontSize){
+            case 'lg':
+                return css`
+                    font-size: 44px;
+                    @media (max-width: 768px){
+                        font-size: 36px;
+                    }
+                `
+            case 'md':
+                return css`
+                    font-size: 20px;
+                    @media (max-width: 768px){
+                        font-size: 16px;
+                    }
+                `
+            case 'sm':
+                return css`
+                    font-size: 16px;
+                    @media (max-width: 768px){
+                        font-size: 12px;
+                    }
+                `
+        }
+    }}
+
+    /* font-size: ${({fontSize})=> {
         switch(fontSize){
             case 'lg':
                 return '44px'
@@ -20,7 +46,8 @@ export const StyledBaseTitle = styled(BaseTitle)<iStyledBaseTitleProps>`
             case 'sm':
                 return '16px'
         }
-    }};
+    }}; */
+    
 `
 
 // Outra sintaxe de lógica de variantes com switch case, melhor para quando ouver mais de uma propriedade para estilizar com base em uma única props
