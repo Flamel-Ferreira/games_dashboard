@@ -27,7 +27,7 @@ export const StyledHeader = styled.header`
         }
     }
 
-    @media (max-width: 600px){
+    @media (max-width: 768px){
          flex-direction: column-reverse;
 
          .userMenu{
