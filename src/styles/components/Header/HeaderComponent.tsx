@@ -7,15 +7,15 @@ const HeaderComponent = () => {
     <StyledHeader>
         <StyledHeaderForm>
             <button type='submit'>
-                <MdSearch size={30} color='rgba(255,255,255,.5)'/>
+                <MdSearch size={30} />
             </button>
             <input type="text" name='search' id='search' placeholder='Buscar...'/>
         </StyledHeaderForm>
         <div className="userMenu">
             <button>
-                <MdNotifications size={30} color='#FFF' />
+                <MdNotifications size={30} />
             </button>
-                <img src={Avatar1} alt="Nome do Usuário" />
+            <img src={Avatar1} alt="Nome do Usuário" />
         </div>
     </StyledHeader>
   )

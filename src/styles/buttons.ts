@@ -12,7 +12,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
     align-items: center;
     justify-content: center;
     gap: .6rem;
-
+    border-radius: 6px;
     font-size:17px;    
     transition: .4s;
     font-family: 'Poppings',sans-serif;
@@ -23,16 +23,20 @@ export const StyledButton = styled.button<iStyledButtonProps>`
                 return css`
                     padding:0 2rem;
                     height:80px;
+                    border-radius: 12px;
+
                 `
             case 'md':
                 return css`
                     padding:0 2rem;
                     height:46px;
+                    border-radius: 6px;
                 `
             case 'sm':
                 return css`
                     padding:0 1.5rem;
                     height:32px;
+                    border-radius: 6px;
                 `
         }
     }}

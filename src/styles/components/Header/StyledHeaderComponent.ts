@@ -17,6 +17,14 @@ export const StyledHeader = styled.header`
             height:60px;
             object-fit:cover;
         }
+
+        button{ 
+            color: ${({theme})=> theme.colors.white};
+           
+            &:hover{
+                color: ${({theme})=> theme.colors.blue}
+            }
+        }
     }
 
     @media (max-width: 600px){
@@ -24,7 +32,7 @@ export const StyledHeader = styled.header`
 
          .userMenu{
             width:100%;
-            justify-content:flex-end;
+            justify-content:center;
          }
     }
 `
@@ -39,6 +47,15 @@ export const StyledHeaderForm = styled.form`
     gap: .5rem;
     border-radius:10px;
     background-color: ${({theme}) => theme.colors.white20};
+
+    button{ 
+        color: ${({theme})=> theme.colors.white50};
+        transition: .4s ease-in;
+
+        &:hover{
+            color: ${({theme})=> theme.colors.white}
+        }
+    }
 
     input{
         font-family: 'Poppins',sans-serif;
@@ -56,5 +73,9 @@ export const StyledHeaderForm = styled.form`
         &:focus{
             outline: none;
         }
+    }
+
+    @media (max-width: 600px){
+        height:52px;
     }
 `
