@@ -23,7 +23,6 @@ const MainBanner = () => {
                 <StyledButton buttonSize='lg' buttonStyle='solid' >Comprar</StyledButton>
             </PriceBox>
         </FlexGrid>
-        
         <ImageGrid>
             <img src={Charizard} alt="Imagem de Charizard" />
         </ImageGrid>
