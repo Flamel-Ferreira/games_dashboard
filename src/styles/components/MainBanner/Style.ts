@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledBanner = styled.section`
+    margin-top: 20px;
     display:flex;
     gap: 16px;
     justify-content: space-between;
